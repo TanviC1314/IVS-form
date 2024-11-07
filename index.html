@@ -6,35 +6,37 @@
     <title>15-Minute Consultation | Ivy Coach</title>
     <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
 </head>
 <body>
+    
     <header>
         <div class="nav-container">
-            <div class="nav-left">
-                <nav>
-                    <a href="#">About</a>
-                    <a href="#">Admissions Counseling</a>
-                    <a href="#">Tutoring</a>
-                </nav>
-            </div>
-            <a >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="ivs_logo.png" alt="ivs logo"></a>
-            <div class="nav-right">
-                <nav>
-                    <a href="#">Statistics</a>
-                    <a href="#">Press</a>
-                    <a href="#">Blog</a>
-                </nav>
-                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"/>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
-                </svg>
-                <a href="#" class="get-started">Get Started</a>
-            </div>
+            <a href="#" class="logo">
+                <img src="ivs_logo.png" alt="IVS Logo" class="logo-image">
+            </a>
         </div>
     </header>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate');
+                    }
+                });
+            }, { threshold: 0.1 });
+        
+            document.querySelectorAll('.hero-section, main, .blog-section').forEach(el => {
+                observer.observe(el);
+            });
+        });
+        </script>
     <main>
-        <h2 class="consultation-title">Complimentary Consult Form</h2>
+        <h2 class="consultation-title">Consult Form</h2>
         <p class="required-text">* indicates required fields</p>
 
         <form class="consultation-form" id="consultationForm" onsubmit="submitForm(event)">
@@ -210,6 +212,7 @@
     </script>
 
 
+
 <section class="blog-section">
     <div class="blog-container">
         <h2 class="blog-title">Why Hiring an Independent Education Consultant Is Crucial for Your Study Abroad Journey: Insights from IVS Solutions</h2>
@@ -276,84 +279,20 @@
 </script>
 
 
-    <section class="hero-section">
-        <h1 class="hero-title">
-            Toward The<br>
-            Conquest Of<br>
-            Admission
-        </h1>
-        <div class="hero-underline"></div>
-        <p class="hero-description">
-            If you're interested in Ivy Coach's college counseling, fill
-            out our complimentary consultation form and we'll be in touch.
-        </p>
-        <a href="#" class="get-started">Get Started</a>
-    </section>
+<section class="hero-section">
+    <h1 class="hero-title">
+        Toward The<br>
+        Conquest Of<br>
+        Admission
+    </h1>
+    <div class="hero-underline"></div>
+    <p class="hero-description">
+        If you're interested in Ivy Coach's college counseling, fill
+        out our complimentary consultation form and we'll be in touch.
+    </p>
+    <a href="#" class="get-started">Get Started</a>
+</section>
 
-    <footer>
-        <div class="footer-container">
-            <div class="newsletter-section">
-                <h2 class="newsletter-title">Sign Up For Our Newsletter</h2>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="YOUR EMAIL" class="newsletter-input" required>
-                    <button type="submit" class="newsletter-button">→</button>
-                </form>
-            </div>
-
-            <div class="footer-column">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Meet Ivy Coach Leadership</a></li>
-                    <li><a href="#">Why Hire</a></li>
-                    <li><a href="#">We Get Results</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Admissions Counseling</h3>
-                <ul>
-                    <li><a href="#">College Admissions Counseling</a></li>
-                    <li><a href="#">Graduate School Admissions Counseling</a></li>
-                    <li><a href="#">Pro Bono</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Tutoring</h3>
-                <ul>
-                    <li><a href="#">Academic Tutoring</a></li>
-                    <li><a href="#">Test Prep</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Statistics</h3>
-                <ul>
-                    <li><a href="#">Ivy League Stats</a></li>
-                    <li><a href="#">College Intel</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Press</h3>
-                <ul>
-                    <li><a href="#">Media Mentions</a></li>
-                    <li><a href="#">Press Releases</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-column">
-                <h3>Blog</h3>
-                <ul>
-                    <li><a href="#">Latest Posts</a></li>
-                    <li><a href="#">Categories</a></li>
-                </ul>
-            </div>
-
-            <!-- <img src="/placeholder.svg?height=100&width=200" alt="NACAC Logo" class="nacac-logo"> -->
-        </div>
-    </footer>
+  
 </body>
 </html>
