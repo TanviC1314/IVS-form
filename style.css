@@ -53,7 +53,7 @@ header {
 }
 
 .logo-image {
-    max-height: 65px;
+    max-height: 70px;
     width: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -191,7 +191,33 @@ header {
         transform: translateY(0);
     }
 }
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.terms-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-label {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #003869;
+}
+
+.terms-link {
+    color: #FF5C35;
+    
+    text-decoration: underline;
+}
+
+.terms-link:hover {
+    color: #e64a2e;
+}
 @keyframes expandWidth {
     from { width: 0; }
     to { width: 100px; }
@@ -426,7 +452,7 @@ textarea:focus {
     }
 
     .logo-image {
-        max-height: 50px;
+        max-height: 60px;
     }
 
     .blog-title {
