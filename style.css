@@ -255,6 +255,33 @@ main {
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease-in-out 0.6s forwards;
 }
+.phone-number {
+    color: #e6eef7;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center; /* Aligns text and icon vertically */
+}
+
+.phone-number:hover {
+    color: #FF5C35; /* Changes text and icon color on hover */
+}
+
+.call-icon {
+    width: 20px; /* Size of the call icon */
+    height: 20px;
+    margin-right: 8px; /* Space between icon and phone number */
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for both text and icon */
+.phone-number:hover .call-icon {
+    transform: scale(1.1);
+}
 
 .consultation-title {
     color: #e6eef7;
