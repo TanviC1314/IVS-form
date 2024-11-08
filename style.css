@@ -414,6 +414,9 @@ textarea:focus {
         padding: 80px 20px;
         transition: left 0.3s ease-in-out;
     }
+    .consultation-form{
+        border-color: #e64a2e;
+    }
 
     .main-nav.active {
         left: 0;
