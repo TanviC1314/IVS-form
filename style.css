@@ -74,14 +74,18 @@ header {
     width: auto;
     display: flex;
     align-items: flex-start;
-    margin-left: -30px;
+    /* margin-left: -30px; */
     transition: transform 0.3s ease-in-out;
 }
+
 
 .logo-image:hover {
     transform: scale(1.1);
 }
 
+.logo-text {
+    color: white;
+}
 .main-nav {
     display: flex;
     align-items: center;
@@ -501,7 +505,7 @@ textarea:focus {
 
     .logo-image {
         max-height: 60px;
-        margin-left: 10px;
+        margin-left: -10px;
     }
 
     .blog-title {
